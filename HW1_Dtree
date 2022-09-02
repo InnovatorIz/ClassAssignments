@@ -1,0 +1,20 @@
+# Step 1: Load the data: Use the following package from sklearn.datasets 
+    # import load_digits. Each instance is 8x8 image 
+    # (64 pixels/features) and there are 1700+ instances.
+import pandas as pd
+from sklearn.datasets import load_digits
+#assighn and load the digiti data sets
+
+digits=load_digits(as_frame=True)
+digits
+
+### understand the data more 
+print(digits.keys())
+print(digits.DESCR)
+print(digits.images.shape)
+print(digits.data.shape)
+
+
+# attributes: pixels 
+# classifiers: numbers 0-9 
+# hypothesis: X pixels = number classifier 
